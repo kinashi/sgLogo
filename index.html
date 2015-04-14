@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>style guide logo</title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+</head>
+<body>
+  <div class="ly-wrapper">
+    <ul class="face">
+      <li class="face__topOuter"></li>
+      <li class="face__topInner"></li>
+      <li class="face__leftOuter"></li>
+      <li class="face__bottomOuter"></li>
+      <li class="face__bottomInner"></li>
+      <li class="face__leftInner"></li>
+      <li class="face__right0uter"></li>
+      <li class="face__rightInner"></li>
+      <li class="face__front">
+        <span class="leftEye"></span>
+        <span class="rightEye"></span>
+        <ul class="beak">
+          <li class="beak__back"></li>
+        </ul>
+      </li>
+      <li class="face__back"></li>
+    </ul>
+    <p class="text">click!</p>
+  </div>
+  <script>
+    !function(){
+      var el = document.getElementsByClassName('face')[0];
+      el.addEventListener('click', function() {
+        el.classList.toggle('is-animation');
+      }, false);
+    }();
+  </script>
+</body>
+</html>
